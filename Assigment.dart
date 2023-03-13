@@ -16,20 +16,24 @@ double divideTwo(double num1, double num2){
 }
 //task 5
 int stringLength(String str){
-  return str.length;
+return str.length;  
 }
 //task 6
 dynamic getFirstElement(List list){
-  if(list.isEmpty){
-    return null;
+if (list.isEmpty) {
+    return null;  
+}
+return list[0];  
   }
-  return list[0];
-}
 void main(){
-  print(addTwo(2,3));
-  print(substractTwo(5,2));
-  print(multiplyTwo(2,3));
-  print(divideTwo(10,3));
+  print(addTwo(2, 3));
+  print(substractTwo(5, 2));
+  print(multiplyTwo(2, 3));
+  print(divideTwo(10, 3));
   print(stringLength('Hello'));
-  print(getFirstElement([1,2,3,4,5]));
+  List list = [1, 2, 3, 4, 5];
+  print(getFirstElement(list));
 }
+  
+  
+
